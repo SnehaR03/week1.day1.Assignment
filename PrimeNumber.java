@@ -33,7 +33,7 @@ public class PrimeNumber {
        // Set the flag as true when there is no remainder
       // break the iterator
 		else {
-		for(int i=2;i<value;i++) {
+		for(int i=2;i<=value/2;i++) {
 			int remainder=value%i;
 			if(remainder==0) {
 			    primeflag=true;
