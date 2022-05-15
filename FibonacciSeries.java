@@ -18,8 +18,9 @@ public class FibonacciSeries {
 		// initialize 3 int variables (Tip: range = 8, firstNum = 0, secNum = 1, sum in the series)
 		int range=8,firstNum=0,secNum=1;
 				// Print first number
-		System.out.print("The FibonacciSeries:"+firstNum);
-				// Iterate from 1 to the range
+		System.out.print("The FibonacciSeries:"+firstNum+"," +secNum);
+
+		// Iterate from 1 to the range
 		// add first and second number assign to sum
 
 		// Assign second number to the first number
