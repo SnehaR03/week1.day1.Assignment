@@ -26,11 +26,14 @@ public class PrimeNumber {
 
 		int value=13;
 		boolean primeflag=false;
+		if(value==0|| value==1)
+		{System.out.println("Prime Number");}
 		// Iterate from 2 to half of the input
        // Divide the input with each for loop variable and check the remainder
        // Set the flag as true when there is no remainder
       // break the iterator
-		for(int i=2;i<value/2;i++) {
+		else {
+		for(int i=2;i<value;i++) {
 			int remainder=value%i;
 			if(remainder==0) {
 			    primeflag=true;
@@ -43,16 +46,16 @@ public class PrimeNumber {
 
 		// Print 'Not a Prime' when the condition doesn't match 
 
-		if(primeflag=true) {
-				System.out.println("PrimeNumber "+primeflag);
+		if(primeflag==false) {
+				System.out.println("PrimeNumber");
 		}
 		else
 		{   
-			System.out.println("Not PrimeNumber "+primeflag);
+			System.out.println("Not PrimeNumber");
 }
 			}
 			
 
-}
+}}
 
 
