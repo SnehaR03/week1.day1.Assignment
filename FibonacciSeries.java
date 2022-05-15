@@ -16,7 +16,7 @@ public class FibonacciSeries {
 	public static void main(String[] args) {
 		
 		// initialize 3 int variables (Tip: range = 8, firstNum = 0, secNum = 1, sum in the series)
-		int range=8,firstNum=0,secNum=1;
+		int range=8,firstNum=0,secNum=1,sum;
 				// Print first number
 		System.out.print("The FibonacciSeries:"+firstNum+"," +secNum);
 
@@ -30,7 +30,7 @@ public class FibonacciSeries {
 		// print sum
 
 		for (int i = 1; i <range; i++) {
-			int sum=firstNum+secNum;
+			sum=firstNum+secNum;
 			firstNum=secNum;
 			secNum=sum;
 			System.out.print(","+sum);
