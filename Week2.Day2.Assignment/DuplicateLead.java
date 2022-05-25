@@ -35,14 +35,7 @@ public class DuplicateLead {
 			driver.findElement(By.linkText("Duplicate Lead")).click();
 			System.out.println("Title: "+driver.getTitle());
 			driver.findElement(By.className("smallSubmit")).click();
-			//driver.findElement(By.xpath("//a[contains(text(),'Leads')]")).click();
-			//driver.findElement(By.linkText("Find Leads")).click();
-			Thread.sleep(4000);
-			//driver.findElement(By.linkText("Name and ID")).click();
-			//driver.findElement(By.xpath("//input[ @name='firstName' and @class=' x-form-text x-form-field ']")).click();
-			driver.findElement(By.xpath("//input[ @name='firstName' and @class=' x-form-text x-form-field ']")).sendKeys(leadName);
-			driver.findElement(By.xpath("//button[@class='x-btn-text' and text()='Find Leads']")).click();
-			
+			Thread.sleep(3000);
 			String text = driver.findElement(By.id("viewLead_firstName_sp")).getText();
 			if(leadName.equals(text)) {
 			
