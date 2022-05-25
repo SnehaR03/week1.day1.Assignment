@@ -36,6 +36,7 @@ public class DuplicateLead {
 			System.out.println("Title: "+driver.getTitle());
 			driver.findElement(By.className("smallSubmit")).click();
 			Thread.sleep(3000);
+			//confirm the duplicate name is same as captured name
 			String text = driver.findElement(By.id("viewLead_firstName_sp")).getText();
 			if(leadName.equals(text)) {
 			
@@ -47,5 +48,6 @@ public class DuplicateLead {
 			{
 				System.out.println("Failed");
 			}
+			driver.close();
 
 }}
