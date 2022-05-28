@@ -30,7 +30,7 @@ public class LearnDropdown {
 		//select dropdown using value
 		WebElement ddvalue =driver.findElement(By.name("dropdown3")); 
 		Select course=new Select(ddvalue); 
-		course.selectByValue("3");
+		course.selectByValue("2");
 
 		//get number of options
 		WebElement findOptions = driver.findElement(By.className("dropdown"));
