@@ -29,8 +29,8 @@ public class LearnDropdown {
 		text.selectByVisibleText("Appium");
 		//select dropdown using value
 		WebElement ddvalue =driver.findElement(By.name("dropdown3")); 
-		Select value=new Select(ddvalue); 
-		value.selectByValue("3");
+		Select course=new Select(ddvalue); 
+		course.selectByValue("3");
 
 		//get number of options
 		WebElement findOptions = driver.findElement(By.className("dropdown"));
